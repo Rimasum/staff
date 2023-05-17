@@ -32,12 +32,12 @@ const results = (matches) => {
       .map(
         (match) => `
         <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="${match.img}" class="card-img" alt="userimage">
+        <div class="row">
+          <div class="col-4">
+            <img src="${match.img}" class="img-fluid" alt="userimage">
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
+          <div class="col-8">
+            <div>
               <h5 class="card-title">${match.name}</h5>
               <p class="card-text">${match.designation}</p>
               <p class="card-text"><small class="text-muted"><a href="tel:${match.mobile}">${match.mobile}</a></small></p>
