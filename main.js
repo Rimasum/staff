@@ -32,36 +32,41 @@ const results = (matches) => {
       .map(
         (match) => `
         <div class="card mb-3 rounded">
-        <div class="row justify-content-evenly">
-          <div class="col-4">
-            <img src="${match.img}" class="card-img img-fluid" alt="userimage">
+    <div class="row">
+      <div class="col-4">
+        <img src="${match.img}" class="card-img img-fluid" alt="userimage">
+      </div>
+      <div class="col-8">
+        <div>
+          <h5 class="card-title">${match.name}</h5>
+          <p class="card-text">${match.designation}</p>
+          <p class="card-text"><small class="text-muted"><a href="tel:${match.mobile}">${match.mobile}</a></small></p>
+          <p class="card-text"><a href="mailto:${match.email}">${match.email}</a></small></p>
+          <div class="row">
+          <div class="col-6">
+          <p><a href="tel:${match.mobile}" class="btn btn-primary rounded">Call Now</a></p>
+      </div>
+      <div class="col-6">
+          <p><a href="mailto:${match.email}" class="btn btn-primary rounded">Send Mail</a></p>
+      </div>
           </div>
-          <div class="col-8">
-            <div>
-              <h5 class="card-title">${match.name}</h5>
-              <p class="card-text">${match.designation}</p>
-              <p class="card-text"><small class="text-muted"><a href="tel:${match.mobile}">${match.mobile}</a></small></p>
-              <p class="card-text"><a href="mailto:${match.mobile}">${match.email}</a></small></p>
-              <div class="row">
-            <div class="col-6">
-                <p><a href="tel:${match.mobile}" class="btn btn-primary rounded">Call Now</a></p>
-            </div>
-            <div class="col-6">
-                <p><a href="mailto:${match.mobile}" class="btn btn-primary rounded">Send Mail</a></p>
-            </div>
-          </div>
-
-          </div>
-            </div>
-          </div>
+      </div>
+      </div>
         </div>
       </div>
+    </div>
         `
       )
       .join('');
     matchList.innerHTML = result;
   } else {
-    matchList.innerHTML = 'Data Not Found';
+    matchList.innerHTML = `
+    <div class="row">
+      <div>
+          <h1 class="text-center">Data Not Found!</h1>
+      </div>
+    </div>
+    `;
   }
 };
 search.addEventListener('input', () => searchStates(search.value));
