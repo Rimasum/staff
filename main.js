@@ -40,8 +40,8 @@ const results = (matches) => {
         <div>
           <h5 class="card-title">${match.name}</h5>
           <p class="card-text">${match.designation}</p>
-          <p class="card-text"><small class="text-muted"><a href="tel:${match.mobile}">${match.mobile}</a></small></p>
-          <p class="card-text"><a href="mailto:${match.email}">${match.email}</a></small></p>
+          <p class="card-text">${match.mobile}</p>
+          <p class="card-text">${match.email}</p>
           <div class="row">
           <div class="col-6">
           <p><a href="tel:${match.mobile}" class="btn btn-primary rounded">Call Now</a></p>
