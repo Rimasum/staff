@@ -31,30 +31,29 @@ const results = (matches) => {
     const result = matches
       .map(
         (match) => `
-        <div class="card mb-3 rounded">
-    <div class="row">
-      <div class="col-4">
-        <img src="${match.img}" class="card-img img-fluid" alt="userimage">
-      </div>
-      <div class="col-8">
-        <div>
-          <h5 class="card-title">${match.name}</h5>
-          <p class="card-text">${match.designation}</p>
-          <p class="card-text">${match.mobile}</p>
-          <p class="card-text">${match.email}</p>
-          <div class="row">
-          <div class="col-6">
-          <p><a href="tel:${match.mobile}" class="btn btn-primary rounded">Call Now</a></p>
-      </div>
-      <div class="col-6">
-          <p><a href="mailto:${match.email}" class="btn btn-primary rounded">Send Mail</a></p>
-      </div>
+        <div class="card mb-3 rounded d-flex justify-content-center align-content-center">
+        <div class="row">
+          <div class="col-4">
+            <img src="${match.img}" class="card-img img-fluid" alt="userimage">
           </div>
-      </div>
-      </div>
-        </div>
-      </div>
-    </div>
+          <div class="col-8">
+            <div>
+              <h5 class="card-title">${match.name}</h5>
+              <p class="card-text">${match.designation}</p>
+              <p class="card-text">${match.mobile}</p>
+              <p class="card-text">${match.email}</p>
+              <div class="row">
+              <div class="col-6">
+              <p><a href="tel:${match.mobile}" class="btn btn-primary rounded">Call Now</a></p>
+          </div>
+          <div class="col-6">
+              <p><a href="mailto:${match.email}" class="btn btn-primary rounded">Send Mail</a></p>
+          </div>
+              </div>
+          </div>
+          </div>
+            </div>
+          </div>
         `
       )
       .join('');
