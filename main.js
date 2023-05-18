@@ -3,7 +3,7 @@ const matchList = document.getElementById('match-list');
 
 // Search Staff Data and Filter
 const searchStates = async (searchText) => {
-  const res = await fetch('staff.json');
+  const res = await fetch('../data/staff.json');
   const states = await res.json();
   //   console.log(states);
   // Get Match Search Text Input
@@ -13,6 +13,8 @@ const searchStates = async (searchText) => {
       state.name.match(regex) ||
       state.designation.match(regex) ||
       state.dept.match(regex) ||
+      state.joiningdate.match(regex) ||
+      state.dob.match(regex) ||
       state.mobile.match(regex) ||
       state.email.match(regex)
     );
@@ -31,23 +33,27 @@ const results = (matches) => {
     const result = matches
       .map(
         (match) => `
-        <div class="card mb-3 rounded d-flex justify-content-center align-content-center">
+        <div class="card mb-3 rounded overflow-hidden">
         <div class="row">
-          <div class="col-4">
-            <img src="${match.img}" class="card-img img-fluid" alt="userimage">
+          <div class="col-5">
+            <img src="${match.img}" class="card-img img-fluid " alt="userimage">
           </div>
-          <div class="col-8">
+          <div class="col-7">
             <div>
-              <h5 class="card-title">${match.name}</h5>
-              <p class="card-text">${match.designation}</p>
-              <p class="card-text">${match.mobile}</p>
-              <p class="card-text">${match.email}</p>
+              <h5 class="card-title mt-2 fs-4 text-dark">${match.name}</h5>
+              <hr class="m-0 p-0">
+              <p class="card-text m-0 fw-semibold">${match.designation}</p>
+              <p class="card-text m-0"><i class="fa-solid fa-house-user"></i> ${match.dept}</p>
+              <!--  <p class="card-text m-0"><i class="fa-solid fa-calendar-days"></i> ${match.joiningdate}</p> -->
+              
+              <p class="card-text m-0"><i class="fa-solid fa-phone"></i> ${match.mobile}</p>
+              <p class="card-text"><i class="fa-solid fa-envelope"></i> ${match.email}</p>
               <div class="row">
               <div class="col-6">
-              <p><a href="tel:${match.mobile}" class="btn btn-primary rounded">Call Now</a></p>
+              <p><a href="tel:${match.mobile}" class="btn btn-primary rounded"><i class="fa-solid fa-phone"></i> Call Now</a></p>
           </div>
           <div class="col-6">
-              <p><a href="mailto:${match.email}" class="btn btn-primary rounded">Send Mail</a></p>
+              <p><a href="mailto:${match.email}" class="btn btn-primary rounded"><i class="fa-solid fa-envelope"></i> Send Mail</a></p>
           </div>
               </div>
           </div>
@@ -62,7 +68,7 @@ const results = (matches) => {
     matchList.innerHTML = `
     <div class="row">
       <div>
-          <h1 class="text-center">Data Not Found!</h1>
+          <h3 class="text-center">Sorry, Can't Find This Staff!</h1>
       </div>
     </div>
     `;
