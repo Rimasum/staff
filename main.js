@@ -33,33 +33,44 @@ const results = (matches) => {
     const result = matches
       .map(
         (match) => `
-        <div class="card mb-3 rounded overflow-hidden">
-        <div class="row">
-          <div class="col-5">
-            <img src="${match.img}" class="card-img img-fluid " alt="userimage">
-          </div>
-          <div class="col-7">
-            <div>
-              <h5 class="card-title mt-2 fs-4 text-dark">${match.name}</h5>
-              <hr class="m-0 p-0">
-              <p class="card-text m-0 fw-semibold">${match.designation}</p>
-              <p class="card-text m-0"><i class="fa-solid fa-house-user"></i> ${match.dept}</p>
-              <!--  <p class="card-text m-0"><i class="fa-solid fa-calendar-days"></i> ${match.joiningdate}</p> -->
-              
-              <p class="card-text m-0"><i class="fa-solid fa-phone"></i> ${match.mobile}</p>
-              <p class="card-text"><i class="fa-solid fa-envelope"></i> ${match.email}</p>
-              <div class="row">
-              <div class="col-6">
-              <p><a href="tel:${match.mobile}" class="btn btn-primary rounded"><i class="fa-solid fa-phone"></i> Call Now</a></p>
-          </div>
-          <div class="col-6">
-              <p><a href="mailto:${match.email}" class="btn btn-primary rounded"><i class="fa-solid fa-envelope"></i> Send Mail</a></p>
-          </div>
+        <div class="row mb-3">
+        <div class="col-lg-6">
+          <div class="card rounded overflow-hidden">
+            <div class="row">
+              <div class="col-5 col-md-5">
+                <img
+                  src="${match.img}"
+                  class="card-img img-fluid w-100 h-100"
+                  alt="raid"
+                />
               </div>
-          </div>
-          </div>
+              <div class="col-7 col-md-7 ms-0 ps-0">
+                <h1 class="fs-5 mt-2 p-0 m-0 text-black mb-1">${match.name}</h1>
+                <hr class="p-0 m-0" />
+                <p class="p-0 m-0" style="font-size: 14px">${match.designation}</p>
+                <p class="p-0 m-0" style="font-size: 14px">
+                <i class="fa-solid fa-house-user"></i> ${match.dept}</p>
+                <p class="p-0 m-0" style="font-size: 14px"><i class="fa-solid fa-phone"></i> ${match.mobile}</p>
+                <p class="p-0 mb-2" style="font-size: 14px"><i class="fa-solid fa-envelope"></i> ${match.email}</p>
+                <div class="d-flex justify-content-between pe-2">
+                <a
+                  href="tel:${match.mobile}"
+                  class="btn btn-primary rounded mb-2 p-1"
+                  style="font-size: 14px"
+                  ><i class="fa-solid fa-phone"></i> Call Now</a
+                >
+                <a
+                  href="mailto:${match.email}"
+                  class="btn btn-primary rounded mb-2 p-1"
+                  style="font-size: 14px"
+                  ><i class="fa-solid fa-envelope"></i> Send Mail</a
+                >
+              </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
         `
       )
       .join('');

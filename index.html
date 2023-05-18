@@ -12,20 +12,22 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Staff Directory</title>
   </head>
   <body>
     <div class="container">
-      <div class="row d-flex flex-column">
-        <div class="col m-auto p-0">
+      <div class="row">
+        <div class="col-md-6 m-auto p-0">
           <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bolder fs-3 text-dark"
+              <a class="navbar-brand fw-bolder"
                 ><i class="fa-solid fa-book"></i> Staff Directory</a
               >
               <form class="d-flex" role="search">
                 <input
-                  class="form-control form-control-lg rounded"
+                  class="form-control rounded"
+                  style="width: 160px"
                   type="search"
                   id="search"
                   placeholder="Search"
@@ -35,19 +37,79 @@
             </div>
           </nav>
         </div>
-        <div class="col m-auto">
-          <!-- <h3 class="text-center mb-3">Staff Directory</h3> -->
-          <!-- <div class="form-group mb-3">
-            <input
-              type="text"
-              id="search"
-              class="form-control form-control-lg rounded"
-              placeholder="Search Staff"
-            />
-          </div> -->
-          <div id="match-list"></div>
-        </div>
       </div>
+      <div class="m-auto">
+        <!-- <h3 class="text-center mb-3">Staff Directory</h3>
+        <div class="form-group mb-3">
+          <input
+            type="text"
+            id="search"
+            class="form-control form-control-lg rounded"
+            placeholder="Search Staff"
+          />
+        </div> -->
+        <div id="match-list"></div>
+      </div>
+      <!-- Card Design for Result -->
+      <!-- <div class="row">
+        <div class="col-lg-6">
+          <div class="card rounded overflow-hidden">
+            <div class="row">
+              <div class="col-5 col-md-5">
+                <img
+                  src="./1.jpg"
+                  class="card-img img-fluid w-100 h-100"
+                  alt="raid"
+                />
+              </div>
+              <div class="col-7 col-md-7 ms-0 ps-0">
+                <h1 class="fs-5 mt-2 p-0 m-0 text-info">Masum Reza</h1>
+                <hr class="p-0 m-0" />
+                <p class="p-0 m-0" style="font-size: 14px">Masum Reza</p>
+                <p class="p-0 m-0" style="font-size: 14px">Masum Reza</p>
+                <p class="p-0 mb-2" style="font-size: 14px">Masum Reza</p>
+                <div class="d-flex justify-content-between pe-2">
+                  <a
+                    href="#"
+                    class="btn btn-primary rounded mb-2 p-1"
+                    style="font-size: 14px"
+                    ><i class="fa-solid fa-phone"></i> Call Now</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-primary rounded mb-2 p-1"
+                    style="font-size: 14px"
+                    ><i class="fa-solid fa-envelope"></i> Send Mail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="card mb-3" style="max-width: 100%">
+        <div class="row g-0">
+          <div class="col-md-5 m-auto text-center">
+            <img src="./12.jpg" class="img-fluid rounded-circle" alt="..." />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
     <script src="main.js"></script>
   </body>
