@@ -3,7 +3,7 @@ const matchList = document.getElementById('match-list');
 
 // Search Staff Data and Filter
 const searchStates = async (searchText) => {
-  const res = await fetch('../data/staff.json');
+  const res = await fetch('staff.json');
   const states = await res.json();
   //   console.log(states);
   // Get Match Search Text Input
