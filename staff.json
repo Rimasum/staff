@@ -42,5 +42,27 @@
     "mobile": "01531706886",
     "email": "thisforchrome@gmail.com",
     "img": "4.jpg"
+  },
+  {
+    "name": "Shovon Ahmed",
+    "designation": "Instructor (Computer)",
+    "dept": "Account",
+    "workplace": "Narail",
+    "joiningdate": "01-Jun-2016",
+    "dob": "02-July-1998",
+    "mobile": "01531706886",
+    "email": "thisforchrome@gmail.com",
+    "img": "5.jpg"
+  },
+  {
+    "name": "Rakibul Islam",
+    "designation": "Instructor (Computer)",
+    "dept": "Account",
+    "workplace": "Narail",
+    "joiningdate": "01-Jun-2012",
+    "dob": "02-July-1998",
+    "mobile": "01531706886",
+    "email": "thisforchrome@gmail.com",
+    "img": "6.jpg"
   }
 ]
