@@ -57,13 +57,13 @@ const results = (matches) => {
                   href="mailto:${match.email}"
                   class="btn btn-success rounded mb-2 p-2 fw-semibold w-100"
                   style="font-size: 12px"
-                  ><i class="fa-solid fa-phone"></i> Send Mail</a
+                  ><i class="fa-solid fa-envelope"></i> Send Mail</a
                 >
                 <a
                   href="tel:${match.mobile}"
                   class="btn btn-success rounded mb-2 p-2 fw-semibold w-100"
                   style="font-size: 12px"
-                  ><i class="fa-solid fa-envelope"></i> Call Now</a
+                  ><i class="fa-solid fa-phone"></i> Call Now</a
                 >
               </div>
               </div>
