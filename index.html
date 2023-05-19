@@ -27,7 +27,10 @@
         <div class="col-md-6 m-auto p-0">
           <nav class="navbar bg-light mb-3 shadow-sm">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bolder text-uppercase"
+              <a
+                class="navbar-brand fw-bolder text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 ><i class="fa-solid fa-book"></i> Staff Directory</a
               >
               <form class="d-flex" role="search">
@@ -45,85 +48,84 @@
         </div>
       </div>
       <div>
-        <!-- <h3 class="text-center mb-3">Staff Directory</h3>
+        <h3 class="text-center mb-3">Staff Directory</h3>
         <div class="form-group mb-3">
           <input
             type="text"
             id="search"
             class="form-control form-control-lg rounded"
-            placeholder="Search Staff"
+            placeholder="Search"
           />
-        </div> -->
+        </div>
         <div id="match-list"></div>
+        <!-- Footer Section Start -->
         <div class="col-md-6 m-auto">
-          <p class="text-center footer mt-auto py-3 bg-dark bg-dark p-2 rounded text-light">
+          <p class="text-center bg-dark p-2 rounded text-light">
             &copy <span class="text-warning">Rimasum</span> All Rights Reserved
             2011-2023.<br />
             Developed By <span class="text-warning">Masum Reza</span>
           </p>
         </div>
-      </div>
-      <!-- Card Design for Result -->
-      <!-- <div class="row">
-        <div class="col-lg-6">
-          <div class="card rounded overflow-hidden">
-            <div class="row">
-              <div class="col-5 col-md-5">
-                <img
-                  src="./1.jpg"
-                  class="card-img img-fluid w-100 h-100"
-                  alt="raid"
-                />
-              </div>
-              <div class="col-7 col-md-7 ms-0 ps-0">
-                <h1 class="fs-5 mt-2 p-0 m-0 text-info">Masum Reza</h1>
-                <hr class="p-0 m-0" />
-                <p class="p-0 m-0" style="font-size: 14px">Masum Reza</p>
-                <p class="p-0 m-0" style="font-size: 14px">Masum Reza</p>
-                <p class="p-0 mb-2" style="font-size: 14px">Masum Reza</p>
-                <div class="d-flex justify-content-between pe-2">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded mb-2 p-1"
-                    style="font-size: 14px"
-                    ><i class="fa-solid fa-phone"></i> Call Now</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded mb-2 p-1"
-                    style="font-size: 14px"
-                    ><i class="fa-solid fa-envelope"></i> Send Mail</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+        <!-- Footer Section End -->
+        <!-- Button trigger modal -->
+        <!-- <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Launch demo modal
+        </button> -->
 
-      <!-- <div class="card mb-3" style="max-width: 100%">
-        <div class="row g-0">
-          <div class="col-md-5 m-auto text-center">
-            <img src="./12.jpg" class="img-fluid rounded-circle" alt="..." />
-          </div>
-          <div class="col-md-7">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">About</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center bg-dark p-2 rounded text-light">
+                  &copy <span class="text-warning">Rimasum</span> All Rights
+                  Reserved 2011-2023.<br />
+                  Developed By <span class="text-warning">Masum Reza</span>
+                </p>
+              </div>
+              <!-- <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-              </p>
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div> -->
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
+    <!-- JS Script Links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>
