@@ -52,16 +52,16 @@ const results = (matches) => {
                 <i class="fa-solid fa-house-user"></i> ${match.dept}</p>
                 <p class="p-0 m-0" style="font-size: 14px"><i class="fa-solid fa-phone"></i> ${match.mobile}</p>
                 <p class="p-0 mb-2" style="font-size: 14px"><i class="fa-solid fa-envelope"></i> ${match.email}</p>
-                <div class="d-flex justify-content-between pe-2">
+                <div class="d-flex justify-content-between pe-2 gap-2">
                 <a
                   href="mailto:${match.email}"
-                  class="btn btn-success rounded mb-2 p-2 fw-semibold"
+                  class="btn btn-success rounded mb-2 p-2 fw-semibold w-100"
                   style="font-size: 12px"
                   ><i class="fa-solid fa-phone"></i> Send Mail</a
                 >
                 <a
                   href="tel:${match.mobile}"
-                  class="btn btn-success rounded mb-2 p-2 fw-semibold"
+                  class="btn btn-success rounded mb-2 p-2 fw-semibold w-100"
                   style="font-size: 12px"
                   ><i class="fa-solid fa-envelope"></i> Call Now</a
                 >
