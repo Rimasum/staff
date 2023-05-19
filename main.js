@@ -45,14 +45,14 @@ const results = (matches) => {
                 />
               </div>
               <div class="col-7 col-md-7 ms-0 ps-0">
-                <h1 class="fs-5 mt-2 p-0 m-0 text-black mb-1">${match.name}</h1>
+                <h1 class="fs-5 mt-2 p-0 m-0 text-black mb-1 fw-bold">${match.name}</h1>
                 <hr class="p-0 m-0" />
                 <p class="p-0 m-0 fw-semibold" style="font-size: 14px">${match.designation}</p>
                 <p class="p-0 m-0" style="font-size: 14px">
                 <i class="fa-solid fa-house-user"></i> ${match.dept}</p>
                 <p class="p-0 m-0" style="font-size: 14px"><i class="fa-solid fa-phone"></i> ${match.mobile}</p>
                 <p class="p-0 mb-2" style="font-size: 14px"><i class="fa-solid fa-envelope"></i> ${match.email}</p>
-                <div class="d-flex justify-content-between pe-2 gap-2">
+                <div class="d-flex justify-content-between pe-2 column-gap-2">
                 <a
                   href="mailto:${match.email}"
                   class="btn btn-success rounded mb-2 p-2 fw-semibold w-100"
