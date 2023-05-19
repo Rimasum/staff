@@ -35,12 +35,12 @@ const results = (matches) => {
         (match) => `
         <div class="row mb-3">
         <div class="col-md-6 m-auto">
-          <div class="card">
+          <div class="card rounded overflow-hidden">
             <div class="row">
-              <div class="col-5 col-md-5">
+              <div class="col-5 col-md-5 ">
                 <img
                   src="${match.img}"
-                  class="card-img img-fluid w-100 h-100"
+                  class=" img-fluid w-100 h-100 object-fit-cover"
                   alt="raid"
                 />
               </div>
