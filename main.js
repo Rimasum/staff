@@ -54,16 +54,16 @@ const results = (matches) => {
                 <p class="p-0 mb-2" style="font-size: 14px"><i class="fa-solid fa-envelope"></i> ${match.email}</p>
                 <div class="d-flex justify-content-between pe-2">
                 <a
-                  href="tel:${match.mobile}"
-                  class="btn btn-primary rounded mb-2 p-1"
+                  href="mailto:${match.email}"
+                  class="btn btn-success rounded mb-2 p-1"
                   style="font-size: 14px"
-                  ><i class="fa-solid fa-phone"></i> Call Now</a
+                  ><i class="fa-solid fa-phone"></i> Send Mail</a
                 >
                 <a
-                  href="mailto:${match.email}"
-                  class="btn btn-primary rounded mb-2 p-1"
+                  href="tel:${match.mobile}"
+                  class="btn btn-success rounded mb-2 p-1"
                   style="font-size: 14px"
-                  ><i class="fa-solid fa-envelope"></i> Send Mail</a
+                  ><i class="fa-solid fa-envelope"></i> Call Now</a
                 >
               </div>
               </div>
