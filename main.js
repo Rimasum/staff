@@ -35,7 +35,7 @@ const results = (matches) => {
         (match) => `
         <div class="row mb-3">
         <div class="col-md-6 m-auto">
-          <div class="card rounded overflow-hidden">
+          <div class="card rounded overflow-hidden shadow-sm">
             <div class="row">
               <div class="col-5 col-md-5 ">
                 <img
@@ -47,7 +47,7 @@ const results = (matches) => {
               <div class="col-7 col-md-7 ms-0 ps-0">
                 <h1 class="fs-5 mt-2 p-0 m-0 text-black mb-1">${match.name}</h1>
                 <hr class="p-0 m-0" />
-                <p class="p-0 m-0" style="font-size: 14px">${match.designation}</p>
+                <p class="p-0 m-0 fw-semibold" style="font-size: 14px">${match.designation}</p>
                 <p class="p-0 m-0" style="font-size: 14px">
                 <i class="fa-solid fa-house-user"></i> ${match.dept}</p>
                 <p class="p-0 m-0" style="font-size: 14px"><i class="fa-solid fa-phone"></i> ${match.mobile}</p>
@@ -55,14 +55,14 @@ const results = (matches) => {
                 <div class="d-flex justify-content-between pe-2">
                 <a
                   href="mailto:${match.email}"
-                  class="btn btn-success rounded mb-2 p-1"
-                  style="font-size: 14px"
+                  class="btn btn-success rounded mb-2 p-2 fw-semibold"
+                  style="font-size: 12px"
                   ><i class="fa-solid fa-phone"></i> Send Mail</a
                 >
                 <a
                   href="tel:${match.mobile}"
-                  class="btn btn-success rounded mb-2 p-1"
-                  style="font-size: 14px"
+                  class="btn btn-success rounded mb-2 p-2 fw-semibold"
+                  style="font-size: 12px"
                   ><i class="fa-solid fa-envelope"></i> Call Now</a
                 >
               </div>
