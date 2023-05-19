@@ -35,7 +35,7 @@ const results = (matches) => {
         (match) => `
         <div class="row mb-3">
         <div class="col-md-6 m-auto">
-          <div class="card rounded overflow-hidden">
+          <div class="card">
             <div class="row">
               <div class="col-5 col-md-5">
                 <img
@@ -78,8 +78,8 @@ const results = (matches) => {
   } else {
     matchList.innerHTML = `
     <div class="row">
-      <div class="pt-5">
-          <h3 class="text-center">Sorry, Can't Find This Staff!</h1>
+      <div class="mt-5 pt-5 pb-5">
+          <h5 class="text-center">Sorry, Can't Find This Staff!</h5>
       </div>
     </div>
     `;
