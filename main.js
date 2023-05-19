@@ -77,7 +77,7 @@ const results = (matches) => {
     matchList.innerHTML = result;
   } else {
     matchList.innerHTML = `
-    <div class="row -flex justify-content-center align-content-center" style="height: 100vh;">
+    <div class="row -flex justify-content-center align-content-center" style="height: 50vh;">
       <div >
           <h5 class="text-center">Sorry, Can't Find This Staff!</h5>
       </div>
