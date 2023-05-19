@@ -19,9 +19,9 @@ const searchStates = async (searchText) => {
       state.email.match(regex)
     );
   });
-  //   if (searchText.length === 0) {
-  //     matches = [];
-  //   }
+  // if (searchText.length === 0) {
+  //   matches = [];
+  // }
   console.log(matches);
   results(matches);
 };
@@ -77,8 +77,8 @@ const results = (matches) => {
     matchList.innerHTML = result;
   } else {
     matchList.innerHTML = `
-    <div class="row">
-      <div class="mt-5 pt-5 pb-5">
+    <div class="row -flex justify-content-center align-content-center" style="height: 100vh;">
+      <div >
           <h5 class="text-center">Sorry, Can't Find This Staff!</h5>
       </div>
     </div>
