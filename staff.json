@@ -17,8 +17,8 @@
     "workplace": "Narail",
     "joiningdate": "01-Jun-2012",
     "dob": "02-July-1982",
-    "mobile": "01720446526",
-    "email": "mmr.masumreza@gmail.com",
+    "mobile": "01701003591",
+    "email": "thisforalldownload@gmail.com",
     "img": "2.jpg"
   },
   {
@@ -28,8 +28,8 @@
     "workplace": "Narail",
     "joiningdate": "01-Jun-2014",
     "dob": "02-July-1985",
-    "mobile": "01720446526",
-    "email": "mmr.masumreza@gmail.com",
+    "mobile": "01746540007",
+    "email": "rimasum.dev@gmail.com",
     "img": "3.jpg"
   },
   {
@@ -39,8 +39,30 @@
     "workplace": "Narail",
     "joiningdate": "01-Jun-2011",
     "dob": "02-July-1983",
-    "mobile": "01720446526",
-    "email": "mmr.masumreza@gmail.com",
+    "mobile": "01531706886",
+    "email": "thisforchrome@gmail.com",
     "img": "4.jpg"
+  },
+  {
+    "name": "Shovon Ahmed",
+    "designation": "Instructor (Computer)",
+    "dept": "Account",
+    "workplace": "Narail",
+    "joiningdate": "01-Jun-2016",
+    "dob": "02-July-1998",
+    "mobile": "01531706886",
+    "email": "thisforchrome@gmail.com",
+    "img": "5.jpg"
+  },
+  {
+    "name": "Rakibul Islam",
+    "designation": "Instructor (Computer)",
+    "dept": "Account",
+    "workplace": "Narail",
+    "joiningdate": "01-Jun-2012",
+    "dob": "02-July-1998",
+    "mobile": "01531706886",
+    "email": "thisforchrome@gmail.com",
+    "img": "6.jpg"
   }
 ]
