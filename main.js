@@ -33,7 +33,7 @@ const results = (matches) => {
     const result = matches
       .map(
         (match) => `
-        <div class="row mb-3">
+        <div class="row mb-3 d-flex justify-content-center">
         <div class="col-lg-6">
           <div class="card rounded overflow-hidden">
             <div class="row">
@@ -77,7 +77,7 @@ const results = (matches) => {
     matchList.innerHTML = result;
   } else {
     matchList.innerHTML = `
-    <div class="row">
+    <div class="row mt-5">
       <div>
           <h3 class="text-center">Sorry, Can't Find This Staff!</h1>
       </div>
